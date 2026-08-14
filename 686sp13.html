@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Identity: Drew Armstrong</title>
+<link rel="stylesheet" type="text/css" href="UM_style.css" />
+<!-- Tracking Code --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65246275-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End of Tracking Code -->
+<script src="menu.js" defer></script>
+</head>
+
+<body>
+
+
+
+<div id="main">
+
+
+<div id="head">
+<!-- <a href="http://www.miami.edu"><img src="split_u.gif"></a>-->
+<a href="index.html"><h1>Drew Armstrong</h1></a>
+</div>
+
+<site-menu></site-menu>
+
+
+<div id="content">
+<h1>What is ADE? Part II</h1>
+
+<table>
+<tbody>
+<tr> 
+<th> Course Notes</th>
+<th> Date</th>
+<th> Details</th>
+</tr>
+
+
+<TR align="center"> <TH COLSPAN=3>Part 3. McKay Correspondence</TH> </TR>
+
+<tr>
+<td width="100">
+<a href="686sp13/Lecture1.pdf" target="_blank" rel="noopener">Lecture 1</a>
+</td>
+<td width="60">
+Jan 15
+</td>
+<td>
+Prologue and review of last semester. Bilinear and sesquilinear forms. Cartan-Dieudonn&eacute; Theorem. Assignment: Read <a href="686sp13/Bourbaki_Quad_Forms.pdf" target="_blank" rel="noopener">Chapter 9 from Bourbaki's "Elements of the History of Mathematics"</a>. The circle group U(1). The covering map from R to U(1). Discrete subgroups of U(1) are cyclic.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture2.pdf" target="_blank" rel="noopener">Lecture 2</a>
+</td>
+<td>
+Jan 17
+</td>
+<td>
+Goal: Prove that discrete subgroups of SO(3) are parametrized by triples p,q,r of positive integers such that 1/p+1/r+1/q>1. (Does this look familiar?) Start small: O(1) is the group of order 2. SO(1) is the group of order 1. U(1) is topologically a circle. O(2) consists of rotations and reflections. Relations in O(2) are just the trigonometric angle sum/difference formulas. Theorem (Euler): U(1) and SO(2) are isomorphic. (This is an example of a low-dimensional "anomalous isogeny".) Corollary: Discrete subgroups of O(2) are cyclic and dihedral. O(2) is topologically a disjoint union of two circles. O(2) and SO(2) have the same Lie algebra. (Slogan: Lie algebras can't see topology.) Cartan-Dieudonn&eacute; implies that every non-identity element of SO(3) is a rotation about some axis. Corollary (Euler's Rotation Theorem): The composition of two rotations is again a rotation. Cute proof.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture3.pdf" target="_blank" rel="noopener">Lecture 3</a>
+</td>
+<td>
+Jan 22
+</td>
+<td>
+More about the dihedral groups. They have two nice presentations. This is the theory of Coxeter groups in embryo. Now we classify finite subgroups of SO(3). There are two infinite families: Cyclic groups and Dihedral groups (there's a small trick to realize the 2D reflections as 3D rotations). And three "exceptional" groups: T = the 12 rotations of the tetrahedron, O = the 24 rotations of the cube/octahedron, and I = the 60 rotations of the icosihedron/dodecahedron. Theorem: That's all. Proof: By Euler, every non-identity element is a rotation so has an axis. Examine the orbits of G acting on the axes. Get the equation 1/p + 1/q + 1/r = 1 + 2/|G|.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture4.pdf" target="_blank" rel="noopener">Lecture 4</a>
+</td>
+<td>
+Jan 24
+</td>
+<td>
+WHY do the finite subgroups of SO(3) correspond to regular polyhedra? Let Q be a regular polyhedron. By definition, G=Aut^+(Q) acts transitively on vertices/edges/faces. The Euler characteristic is v-e+f=2. By Orbit-Stabilizer we have r_v*v=r_e*e=r_f*f=|G|. Do a little double-counting to get 1/r_v + 1/r_e + 1/r_f = 1 + 2/|G|. (Again!) Together with r_e=2, this classifies the regular polyhedra.  Now consider the barycentric subdivision \Delta(Q) of Q (<a href="686sp13/Barycentric_Subdivisions.pdf" target="_blank" rel="noopener">see this picture</a>). Each face of \Delta(Q) is a spherical triangle with angles \pi/r_v, \pi/r_e, \pi/r_f. Let A,B,C be rotations around the triangle axes by angles 2\pi/r_v, 2\pi/r_e, 2\pi/r_f. Theorem (von Dyck): G has abstract presentation A^{r_v}=B^{r_e}=C^{r_f}=ABC=1. Finally, Thomas Harriot's proof that the area of a triangle with angles a,b,c on a sphere of radius R is (a+b+c-\pi)*R^2. Since the area must be > 0, we conclude that 1/r_v + 1/r_e + 1/r_v > 1. (Again!) What about the groups &lt;x^p=y^q=z^r=xyz=1&gt; when 1/p+1/q+1/r<=1?? (Download <a href="http://www.geometrygames.org/KaleidoTile/" target="_blank" rel="noopener">KaleidoTile</a> and explore!)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture5.pdf" target="_blank" rel="noopener">Lecture 5</a>
+</td>
+<td>
+Jan 29
+</td>
+<td>
+Spaces of constant (sectional) curvature are classified: (1) Spherical with isometries O(n), (2) Affine with isometries Aff(n), (3) Hyperbolic with isometries O^+(n,1). Unfortunately there is no Euclidean embedding of hyperbolic space:( The Poincare disk model. The von Dyck group D_{p,q,r} with relations X^p=Y^q=Z^r=XYZ=1 can be realized as a discrete group of isometries of a 2D space of constant curvature 1/p+1/q+1/r - 1. Question: What can we say about the bigger group D^*_{p,q,r} with relations X^p=Y^q=Z^r=XYZ ? The group D^*_{2,2,2} has order 8 and relations i^2=j^2=k^2=ikj=-1 (William Rowan Hamilton, Oct 16, 1843). Quaternions and the symplectic group Sp(n).
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture6.pdf" target="_blank" rel="noopener">Lecture 6</a>
+</td>
+<td>
+Feb 1
+</td>
+<td>
+Theorem (Samuelson, 1940): The only spheres that admit a topological group structure are the 0-sphere = O(1) = unit real numbers, the 1-sphere = SO(2) = U(1) = unit complex numbers, and the 3-sphere = SU(2) = Sp(1) = unit quaternions. See <a href="686sp13/Finite_Groups_Acting_On_Spheres.pdf" target="_blank" rel="noopener">this article</a> for details. Today we discuss the 3-sphere. Quaternions as an algebra of 2X2 complex matrices = R^4. The unit quaternions form a group Sp(1)=SU(2). (Compare Euler's isomorphism U(1)=SO(2).) SU(2) acts by conjugation on quaternions (=R^4), which gives a homomorphism SU(2) --> O(4). This action preserves the imaginary quaternions (=R^3). Using the polar form, we see that this gives a 2:1 homomorphism SU(2) --> SO(3). Topologically, SO(3) is a 3-sphere with antipodal points identified, i.e., real projective 3-space.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture7.pdf" target="_blank" rel="noopener">Lecture 7</a>
+</td>
+<td>
+Feb 5
+</td>
+<td>
+Some Lie Theory. The quaternion algebra is R^4. The imaginary quaternions (=R^3) form the space of 2X2 trace-free skew-hermitian matrices. Let's call it su(2). SU(2) acts on su(2) by conjugation. This is called the Adjoint action of the Lie group SU(2) on the Lie algebra su(2). The dot product on R^3=su(2) can be written as < U,V > = trace(UV)/2, which is called the "Killing form". If we identify su(2)=R^3, the Adjoint action is just the "spin homomorphism" SU(2) --> SO(3). The exponential map of matrices. Using the polar form of Sp(1) we get a surjective map exp : su(2)-->SU(2) from the Lie algebra su(2) to the Lie group SU(2). Question: Is exp a homomorphism? (What would that even mean?) Answer: In a sense, Yes. su(2) is not a group but it is a Lie algebra with "Lie bracket" [U,V]=UV-VU=2(UXV). The Lie bracket is the "derivative" of associative (Jacobi identity). Finally, if you combine the Killing form and Lie bracket you get something like associativity: < [U,V],W >=< U,[V,W] >.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture8.pdf" target="_blank" rel="noopener">Lecture 8</a>
+</td>
+<td>
+Feb 7
+</td>
+<td>
+The Lie groups SO(3), O(3) and SU(2) are 3-dimensional real manifolds with a differentiable group structure. They are LOCALLY isomorphic --- locally they all look like R^3 with the dot and cross products --- but they are GLOBALLY (i.e. topologically) different. SU(2) and O(3) are both double-covers of SO(3). Today we will lift finite subgroups from SO(3) to SU(2). Later we will lift them from SO(3) to O(3). The finite subgroups G < SU(2) come in two kinds: (1) |G| is even. In this case G contains an element of order 2. Since the antipodal map -1 is the only element in SU(2) of order 2, G contains -1. The spin map SU(2)-->SO(3) has kernel {+/-1} so each finite subgroup D_{p,q,r} of SO(3) lifts to a unique subgroup D^*_{p,q,r} of SU(2) containing -1. These are called the "binary polyhedral groups". (2) |G| is odd. Since G does not contain -1, the spin map says that G is isomorphic to a subgroup of SO(3). The only such groups are cyclic. Conclusion: The finite subgroups of SU(2) are binary polyhedral and cyclic of odd order. Remark: These are also the finite subgroups of SL(2,C) since any compact subgroup of SL(2,C) is conjugate to a unitary group.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture9.pdf" target="_blank" rel="noopener">Lecture 9</a>
+</td>
+<td>
+Feb 12
+</td>
+<td>
+Crash course in representation theory. A representation of an abstract finite group G is a group hom from G into matrices. Representations can be added (direct sum) and multiplied (tensor product), so they form a ring. Representations over C have unique decomposition into irreducibles. Facts: The number of irreducibles is finite and equals the number of conjugacy classes. The regular representation (G acting by multiplication on itself) contains each irreducible V, with multiplicity dim(V). Corollary: sum (dim(V))^2 = |G|, where the sum is over irreducible representations V. The "character" of a representation is the function G-->C giving the traces of its matrices. Miracle (Frobernius): The character determines the representation up to isomorphism. Historically, characters were defined first. In fact, the whole theory developed incredibly quickly between 1896 and 1901. Dedekind (1896) observed that the determinant of a group table factors in a nice way. Frobenius explained Dedekind's observations and built the whole edifice of representation theory within five years.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture10.pdf" target="_blank" rel="noopener">Lecture 10</a>
+</td>
+<td>
+Feb 14
+</td>
+<td>
+Let G be a finite group with N conjugacy classes. The "class functions" on G form the vector space C^N, with the usual hermitian form. The irreducible characters of G form an orthonormal basis for C^N. All of the characters form an integer cone in C^N. We can get a full lattice if we allow "virtual" characters. The irreducible chars are displayed in the character table. (For example, see the character table of I^*, the <a href="686sp13/Binary_Icosahedral_Chars.pdf" target="_blank" rel="noopener">binary icosahedral group</a>.) Since the rows are (essentially) orthonormal, the columns are also (essentially) orthonormal. How could we interpret the columns? Let G=D^*_{p,q,r} be a finite subgroup of SU(2). In 1979, John McKay observed that the columns of the character table of G form an eigenbasis for the affine Coxeter diagram T^*_{p,q,r}. More generally, let V be the defining (2-dimensional) representation of G and let chi_1,..,chi_N be its characters. Define the "McKay graph" of G by expanding the tensor products V*chi_i = sum_j a_{ij}*chi_j and forming the graph with a_{ij} edges from vertex i to vertex j. Theorem: The McKay graph of D^*_{p,q,r} is the affine Coxeter diagram T^*_{p,q,r}. This is just the tip of a beautiful iceberg. See <a href="686sp13/McKay_Yi_Sun.pdf" target="_blank" rel="noopener">here</a> for a couple pointers.
+</td>
+</tr>
+
+<TR align="center"> <TH COLSPAN=3>Part 4. Reflection Groups</TH> </TR>
+
+<tr>
+<td>
+<a href="686sp13/Lecture11.pdf" target="_blank" rel="noopener">Lecture 11</a>
+</td>
+<td>
+Feb 19
+</td>
+<td>
+What's the name of this course? We've seen two examples of ADE classification, now we see a third. We've lifted the finite subgroups of SO(3) to SU(2), now we lift them to O(3). Q: What are the finite subgroups G of O(3)? There are three cases: (1) If G is in SO(3) we're done. (2) If G contains -1 then G is a direct product G' union -G' for some G' in SO(3). (3) If -1 is not in G, then G has the form G' union -(K\G') for some pair G'< K of subgroups of SO(3) with [K:G']=2. So we must classify such pairs. There are only four types: C_n< C_{2n}, C_n< D_{2n}, D_{2n}< D_{4n} (these are symmetries of prisms, antiprisms, and things), and finally T< O (because a cube contains a tetrahedron with index 2). That's All. In summary, O(3) has 14 kinds of subgroups, including: 7 infinite families and 7 exceptional groups. Q: So which subgroups of O(3) are the correct "lifts" of T, O, I? Answer: T union -(O\T), O union -O, and I union -I. You probably thought I was going to say T union -T, but that's the unusual "pyritohedral group" (symmetries of a volleyball). We'll avoid it.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture12.pdf" target="_blank" rel="noopener">Lecture 12</a>
+</td>
+<td>
+Feb 21
+</td>
+<td>
+Why do I insist that T union -(O\T), O union -O, I union -I are the lifts of T, O, I? Geometric reasons. Recall: T, O, I are generated by rotations around the vertices of a spherical triangle. For example, blow up the barycentric subdivision of a regular tetrahedron onto the sphere. It is tessellated by triangles with angles Pi/3, Pi/3, Pi/2. The group T of orientation-preserving automorphisms is generated by rotations around the vertices by twice these angles. The *full* group of automorphisms is generated by the reflections A,B,C in the walls (great circles) of the triangle. It has abstract presentation A^2=B^2=C^2=(AB)^3=(AC)^3=(AB)^2=1, which can be displayed schematically as a chain graph A-B-C. Note: This is just the group of permutations of the 4 vertices of the tetrahedron, with A=(12), B=(23), C=(34) the "adjacent transpositions". [Remark: In higher dimensions this generalizes to the symmetric group.] Finally, note that T union -(O\T) (a.k.a. the symmetric group S_4) acts regularly on the triangles of the barycentric subdivision. We can define a length function S_4->N on the triangles/group elements and the length generating function is (1)(1+q)(1+q+q^2)(1+q+q^2+q^3)=[4]_q!. In general we get the q-factorial [n]_q!. In fact, this whole discussion generalizes to FINITE GROUPS GENERATED BY REFLECTIONS.
+</td>
+</tr>
+
+
+<tr>
+<td>
+<a href="686sp13/Lecture13.pdf" target="_blank" rel="noopener">Lecture 13</a>
+</td>
+<td>
+Feb 26
+</td>
+<td>
+Let G be any group of isometries of R^n. If G has a finite orbit, then G fixes a point. (We saw this before, but the new proof works in more general metric spaces.) Now let G be a finite group of isometries of R^n generated by (possibly affine) reflections. Let t_1,..,t_N be all of the reflections in G and let H_1,..,H_N be their reflecting hyperplanes. By the lemma, there exists a point (call it 0) such that each t_i fixes 0 and hence each H_i contains 0. Thus we may assume the hyperplanes are linear. Given any reflection t, let H_t be its fixed hyperplane. Important Lemma: Then for any g in G we have g(H_t)=H_{gtg^{-1}}. Conclusion the reflecting hyperplanes of G form a "closed system of mirrors" (a.k.a. a "kaleidoscope"). Conversely, given any closed system of mirrors, the group generated by their reflections is finite. This sets up a bijection between FGGR's and FCSM's. Strategy to classify FGGR's: Classify FCSM's instead. The "rank 2" case is easy. We get m equiangular lines in the plane, generating the dihedral group G_2(m). In "rank 3" the reflecting hyperplanes tesselate the sphere into isometric polygons with <= 3 sides. The degenerate cases give A_1 and G_2(m) again. The groups generated by triangles are the familiar T union -(O\T), O union -O, I union -I, but now named A_3, B_3, H_3, instead of E_6, E_7, E_8 as their corresponding groups in SU(2) are named. "Rank 4" and above? We need some machinery.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture14.pdf" target="_blank" rel="noopener">Lecture 14</a>
+</td>
+<td>
+Mar 5
+</td>
+<td>
+Each FGGR has reflecting mirrors that divide space into isometric polyhedral cones. To classify FGGR's, we study the cones. Definition: A polyhedral cone is an intersection of linear half-spaces. The name suggests that it might also be a cone over a polyhedron, but hold your horses. Definition: A finitely generated cone is the non-negative span of a finite set of vectors (hence it's a cone over the convex hull of some points). In general, a "cone" is any set closed under non-negative linear combinations. Your intuition is correct: A cone is polyhedral if and only if it's finitely generated. But this is quite tricky(!) to prove, so we won't. It's called the Farkas-Minkowski-Weyl Theorem, among other things. However, we *will* prove the result in the nice case of simplicial cones. Definition: A simplicial cone is a cone generated by a linearly independent set. Lemma: Every linearly independent set is contained in an open half space. Hence simplicial cones are called "pointed" (guess why). Now here's a question: What does the word "basis" mean in the context of cones? Definition: A vector in a cone is called "extreme" (or "simple") if it is *not* a convex combination of other vectors in the cone. Theorem: Every generating set of a cone contains a unique simple generating set (which are the vectors generating the "extreme rays" of the cone). Definition: Given a cone C, its "dual" is the set C* of x such that x^ty>=0 for all y in C. The set -C* is called the "polar" of C. Note that C is polyhedral if and only if C* is finitely generated. The Duality Theorem for Cones: The cone C is finitely generated if and only if its dual C* is finitely generated. (We won't prove this in generality, but stay tuned.)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture15.pdf" target="_blank" rel="noopener">Lecture 15</a>
+</td>
+<td>
+Mar 7
+</td>
+<td>
+The Duality Theorem for Simplicial Cones: If the cone C is generated by a vector space basis, then C^* is generated by the dual basis (and hence is finitely generated). Exercise: What happens for cones generated by a subset of a basis? Discussion of the "standard simplex" in R^n. BIG EXAMPLE: MY FAVORITE CONE: The cone generated by the vectors e1-e2, e2-e3, .., e{n-1}-en, where e1,..,en is the standard basis of R^n. It lives in the hyperplane (e1+..+en)^{perp}. So we might as well project onto this hyperplane. If matrix A has columns e1-e2,..,e{n-1}-en then the projection matrix is A(A^tA)^{-1}A^t=I-e^te where e is the vector of all 1s. Let Li be the projection of ei.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture16.pdf" target="_blank" rel="noopener">Lecture 16</a>
+</td>
+<td>
+Mar 18
+</td>
+<td>
+More about MY FAVORITE CONE. Again let Li be the projection of the standard basis vector ei onto the hyperplane R^n_0=(e1+..+en)^{perp}. These Li are the vertices of a regular simplex in R^n_0, centered at 0. Let alpha_i=e_i-e_{i+1} be the "root basis". See that the "root cone" (alpha_1,alpha_2) has dual cone (L1,L1+L2). How to compute the dual cone in general. First express the dot product in terms of the "standard basis" L1,L2,..,L{n-1}. Let omega_i be the dual basis to the alpha_i, and then compute that omega_i=L1+L2+..+Li. This is called the basis of "fundamental weights". Elements of the integer cone (omega_i) are called "dominant weights". Note that dominant weights biject to "Young diagrams" with at most n-1 rows. Important Theorem: There is a bijection between dominant weights and irreducible representations of SU(n). Furthermore, the dimension of the ire corresponding to weight \sum ai*omega_i is the product over 1<=i < j<=n of (ai+..a{j-1}+j-i)/(j-i), which is called the Weyl character formula. Mention quarks and antiquarks. Finally, compute the change of basis between roots and weights, and look at Zometool models.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture17.pdf" target="_blank" rel="noopener">Lecture 17</a>
+</td>
+<td>
+Mar 21
+</td>
+<td>
+MY FAVORITE MATRIX. It's also Gilbert Strang's favorite matrix. The Wave Equation. Wait, why am I talking about the wave equation in this class?
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture18.pdf" target="_blank" rel="noopener">Lecture 18</a>
+</td>
+<td>
+Mar 26
+</td>
+<td>
+Positivity of Quadratic Forms. Goal: Generalize Euclid's theorem that the angles in a triangle sum to 180 degrees. Recall Sylvester's Law of Inertia. We say that a quadratic form B is positive semidefinite is x^tBx>=0 for all x. It is positive definite if x^tBx=0 implies x=0. Theorem: B is pos. def. (pos. semidef.) if and only if all eigenvalues of B are >0 (>=0). Here's a nicer characterization. Theorem: B is positive semidefinite if and only if B=A^tA for some real matrix A. Furthermore, the radical of B is the kernel of A. Hence B is positive definite if and only if B=A^tA for some real matrix A with independent columns. Now consider a Euclidean simplex and let A be the matrix whose columns are the normal vectors to the facets. In this case A^tA is positive semidefinite of corank 1. This puts algebraic constraints on the dihedral angles.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture19.pdf" target="_blank" rel="noopener">Lecture 19</a>
+</td>
+<td>
+Mar 28
+</td>
+<td>
+Gram Matrices
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture20.pdf" target="_blank" rel="noopener">Lecture 20</a>
+</td>
+<td>
+Apr 2
+</td>
+<td>
+Volume and the Minkowski Condition
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture21.pdf" target="_blank" rel="noopener">Lecture 21</a>
+</td>
+<td>
+Apr 4
+</td>
+<td>
+Root Systems
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture22.pdf" target="_blank" rel="noopener">Lecture 22</a>
+</td>
+<td>
+Apr 9
+</td>
+<td>
+A reflection group acts simply-transitively on chambers.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture23.pdf" target="_blank" rel="noopener">Lecture 23</a>
+</td>
+<td>
+Apr 11
+</td>
+<td>
+Coxeter's classification of finite reflection groups.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture24.pdf" target="_blank" rel="noopener">Lecture 24</a>
+</td>
+<td>
+Apr 16
+</td>
+<td>
+Regular Polytopes
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture25.pdf" target="_blank" rel="noopener">Lecture 25</a>
+</td>
+<td>
+Apr 18
+</td>
+<td>
+Crystallographic Reflection Groups (Weyl Groups)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture26.pdf" target="_blank" rel="noopener">Lecture 26</a>
+</td>
+<td>
+Apr 23
+</td>
+<td>
+Abstract Reflection Groups (Coxeter Groups)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="686sp13/Lecture27.pdf" target="_blank" rel="noopener">Lecture 27</a>
+</td>
+<td>
+Apr 25
+</td>
+<td>
+Numerology
+</td>
+</tr>
+
+<!--
+
+<tr>
+<td><a href="562sp12/562hw1.pdf" target="_blank" rel="noopener">Homework 1</a><br>
+<a href="562sp12/562hw1sol.pdf" target="_blank" rel="noopener">Solutions</a>
+</td>
+<td>
+Fri Feb 3
+</td>
+<td>
+<a href="562sp12/HW1notes.pdf" target="_blank" rel="noopener">Course Notes</a><br>
+The Ring Concept<br>
+The Ideal Concept<br>
+Isomorphism Theorems
+</td>
+</tr>
+
+-->
+
+<!-- <TR align="center"> <TH COLSPAN=3>Part 0. The Greeks</TH> </TR> -->
+
+
+<!-- no content below this -->
+
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div id="foot"><strong>Since 2009</strong>
+</div>
+<br><br>
+
+
+</body>
+
+</html>

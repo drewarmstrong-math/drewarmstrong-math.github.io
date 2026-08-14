@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Drew Armstrong</title>
+<link rel="stylesheet" href="UM_style.css">
+<script>
+  const legacyPath = window.location.pathname;
+  if (/\.php$/i.test(legacyPath)) {
+    window.location.replace(
+      legacyPath.replace(/\.php$/i, ".html") +
+      window.location.search +
+      window.location.hash
+    );
+  }
+</script>
+</head>
+<body>
+<main id="main">
+  <div id="head"><a href="index.html"><h1>Drew Armstrong</h1></a></div>
+  <div id="content">
+    <h1>Page not found</h1>
+    <p>The requested page could not be found.</p>
+    <p><a href="index.html">Return to the homepage</a></p>
+  </div>
+</main>
+</body>
+</html>

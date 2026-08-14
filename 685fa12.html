@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Identity: Drew Armstrong</title>
+<link rel="stylesheet" type="text/css" href="UM_style.css" />
+<!-- Tracking Code --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65246275-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End of Tracking Code -->
+<script src="menu.js" defer></script>
+</head>
+
+<body>
+
+
+
+<div id="main">
+
+
+<div id="head">
+<!-- <a href="http://www.miami.edu"><img src="split_u.gif"></a>-->
+<a href="index.html"><h1>Drew Armstrong</h1></a>
+</div>
+
+<site-menu></site-menu>
+
+
+<div id="content">
+<h1>What is ADE? Part I</h1>
+
+<table>
+<tbody>
+<tr> 
+<th> Course Notes</th>
+<th> Date</th>
+<th> Details</th>
+</tr>
+
+
+<TR align="center"> <TH COLSPAN=3>Part 1. Perron-Frobenius</TH> </TR>
+
+<tr>
+<td width="100">
+<a href="685fa12/Lecture1.pdf" target="_blank" rel="noopener">Lecture 1</a>
+</td>
+<td width="80">
+Aug 23
+</td>
+<td>
+Introduction and historical sketch. Look at Coxeter diagrams. Assignment: Read <a href="http://www.springerlink.com/content/8862884k33842646/" target="_blank" rel="noopener">Coleman's article</a>. Linear algebra (with a view toward "classification").
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture2.pdf" target="_blank" rel="noopener">Lecture 2</a>
+</td>
+<td>
+Aug 28
+</td>
+<td>
+What is "space"? Classification of finite dimensional vector spaces. Attempt to classify fields (function fields ignored). Assignment: Sketch the classification of finite fields.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture3.pdf" target="_blank" rel="noopener">Lecture 3</a>
+</td>
+<td>
+Aug 30
+</td>
+<td>
+A new beginning? Four friends played a round-robin ping-pong tournament. How can I rank the players? The adjacency matrix. Google. (It's all about Perron-Frobenius.)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture4.pdf" target="_blank" rel="noopener">Lecture 4</a>
+</td>
+<td>
+Sept 4
+</td>
+<td>
+What is a "matrix"? (Sylvester says: "an oblong arrangement of terms".) The endomorphism algebra of a vector space. Choosing coordinates turns everything into matrix algebra. Changing coordinates is matrix conjugation. How to choose "nice" coordinates. (Jordan canonical form.)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture5.pdf" target="_blank" rel="noopener">Lecture 5</a>
+</td>
+<td>
+Sept 6
+</td>
+<td>
+What is a "matrix"? Answer 1: An endomorphism in coordinates. We can choose nice coordinates: Jordan canonical form. Assignment: Browse <a href="685fa12/garrett_modules_over_pids.pdf" target="_blank" rel="noopener">Paul Garrett's notes</a>. Answer 2: A weighted, directed graph. Powers of the matrix are sums of weighted paths. Weights can be meaningful: Markov Chains.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture678.pdf" target="_blank" rel="noopener">Lectures 6, 7, 8</a>
+</td>
+<td>
+Sept 11, 13, 18
+</td>
+<td>
+When do the powers of a matrix converge? My vote for the theorem most under-appreciated by pure mathematicians: <b>The Perron-Frobenius Theorem!</b> Proof of the first part following <a href="685fa12/sternberg_perron_frobenius.pdf" target="_blank" rel="noopener">Sternberg's Chapter 9</a>. Proof of the rest following <a href="685fa12/stewart_perron_frobenius.pdf" target="_blank" rel="noopener">G.W. Stewart's note</a>. Assignment: Read Stewart's note.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture9.pdf" target="_blank" rel="noopener">Lecture 9</a>
+</td>
+<td>
+Sept 20
+</td>
+<td>
+Now we see what PF is for: The spectrum of an undirected graph. The eigenvalues are real. If G is bipartite, the eigenvalues are symmetric about zero. The spectrum of the 3-path and 3-cycle. What about the spectrum of the n-path and n-cycle? (<a href="http://en.wikipedia.org/wiki/Chebyshev_polynomials" target="_blank" rel="noopener">Chebyshev polynomials!</a>)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture10.pdf" target="_blank" rel="noopener">Lecture 10</a>
+</td>
+<td>
+Sept 25
+</td>
+<td>
+The spectrum of the n-path was known to Lagrange at age 23 (1759, "Researches on the Nature and Propagation of Sound"), and I learned of this from the <a href="http://books.google.com/books/about/Coxeter_graphs_and_towers_of_algebras.html?id=EwbvAAAAMAAJ" target="_blank" rel="noopener">beautiful book</a> of Goodman-Harpe-Jones. (Opinion: The spectral theory of Coxeter diagrams has been sadly neglected.) The n-path A_n has spectral radius 2\cos(\pi/(n+1))<2. The n-cycle A_{n+1}^{(1)} has spectral radius 2. VERY IMPORTANT LEMMA: IF H IS A PROPER SUBGRAPH OF CONNECTED GRAPH G, THEN THE SPECTRAL RADIUS OF H IS STRICTLY LESS THAN THE SPECTRAL RADIUS OF G. (PROOF: EASY FROM PF.) So which graphs other than A_n have spectral radius less than 2? They must be trees, but which trees? They must be trees with at most one branch point of degree at most 3. Call these "triangle graphs" T_{p,q,r}. Which triangle graphs? Pause.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture11.pdf" target="_blank" rel="noopener">Lecture 11</a>
+</td>
+<td>
+Sept 27
+</td>
+<td>
+Very Big Day. Recall a bit of PF theory to prove: any proper subgraph of a connected graph has strictly smaller spectral radius. Use this to prove Very Big Theorem: The graphs with spectral radius less than 2 are disjoint unions of triangle graphs T_{p,q,r} with 1/p+1/q+1/r>1. (These are the "Coxeter graphs" of types A,D,E.) The proof is easy and a bit mysterious, involving the "affine extensions" of A,D,E which have spectral radius 2 and very special PF eigenvectors. Assignment: Prove that the ONLY (simple) graphs with spectral radius 2 are disjoint unions of "affine" A,D,E. Think about: What does the inequality 1/p+1/q+1/r>1 really mean? (This leads to McKay Correspondence.)
+
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture12.pdf" target="_blank" rel="noopener">Lecture 12</a>
+</td>
+<td>
+Oct 2
+</td>
+<td>
+Numerology and a Game. Now I will show you some magic. Let G be a finite type Coxeter graph and let h_G be the sum of the entries of the special PF vector of "affine" G. This is called the "Coxeter number" of G. Theorem: The spectral radius of G is 2\cos(\pi/h_G). (Recall that in type A this describes solutions to the wave equation. Does type E_8 have physical significance? Yes: <a href="http://www.ams.org/notices/201108/rtx110801055p.pdf" target=_>Click here</a>.) In general, the eigenvalues of G are 2\cos((d_i-1)/h_G) for magic integers d_1\leq\cdots\leq d_\ell called the "degrees" of G. Define a game for any graph G. The game is finite if and only if G is a finite type Coxeter graph, in which case the number of possible states is the product of the degrees. Proof: I.O.U. [Hint: The game is a group.]
+</td>
+</tr>
+
+<TR align="center"> <TH COLSPAN=3>Part 2. Cartan-Dieudonn&eacute;</TH> </TR>
+
+<tr>
+<td>
+<a href="685fa12/Lecture13.pdf" target="_blank" rel="noopener">Lecture 13</a>
+</td>
+<td>
+Oct 4
+</td>
+<td>
+Collect our thoughts. Q: What is "geometry"? A: The Pythagorean Theorem. Hamilton (1843) invented quaternions by trying to generalize complex numbers. He accidentally discovered the dot product and cross product of points in R^3. Gibbs and Heaviside (around 1880) kept the dot product and cross product, but threw out the quaterions. They also invented "vectors." Tait was not amused ("a hermaphrodite monster"). This all evolved into the concept of an inner-product space, which needs the field R. However, "geometric algebra" can be done over general fields in terms of "bilinear forms."
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture14.pdf" target="_blank" rel="noopener">Lecture 14</a>
+</td>
+<td>
+Oct 9
+</td>
+<td>
+Q: What is "geometry"? A: A bilinear form (probably non-degenerate).  Q: What is a "matrix"? Answer 3: A bilinear form in coordinates. [Like Answers 1 and 2, this leads to a point of view.] The Gram matrix. Change of coordinates for forms. [WARNING: This is not conjugacy. It is sometimes called "congruence" of matrices.] A bilinear form provides a map to the "dual space." The form is non-degenerate if and only if this map is an isomorphism. The form is non-degenerate if and only if the Gram matrix (in any basis) has nonzero determinant.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture15_16.pdf" target="_blank" rel="noopener">Lectures 15, 16</a>
+</td>
+<td>
+Oct 11,16
+</td>
+<td>
+Important Structure Theorem For Forms: Any symmetric bilinear form over a field of characteristic not 2 is diagonalizable. Lemma 1: We can split off the "radical" of the form. Lemma 2: dim V = dim W + dim W^\perp. [WARNING: This does not imply V = W \oplus W^\perp in general, because of "isotropic" vectors.] Lemma 3: If x is "anisotropic" then V = x \oplus x^\perp. Lemma 4: If the form is non-degenerate and SYMMETRIC then there exists an anisotropic vector. Proof of the Structure Theorem: easy induction. [This is closely related to the "Spectral Theorem," but I'll omit that.]
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture17.pdf" target="_blank" rel="noopener">Lecture 17</a>
+</td>
+<td>
+Oct 18,23
+</td>
+<td>
+GL(F^n) can act on Mat(F^n) in two ways: by "conjugation" and by "congruence." The conjugation orbits are equivalence classes of endomorphisms and the congruence orbits are equivalence classes of bilinear forms. The Structure Theorem allows us to classify orbits of symmetric forms. 1. Over a quadratically closed field (like C), every nondegenerate symmetric form is equivalent to the standard "dot product" form. 2. Over R, a symmetric form is classified by its "inertia" (this is called <a href="685fa12/sylvester_inertia.pdf" target="_blank" rel="noopener">Sylvester's Law of Inertia</a>). Language of quadratic forms. Application: Why is a polynomial of degree 2 in 2 variables called a "conic section"? This analysis extends to <a href="http://en.wikipedia.org/wiki/Quadric" target="_blank" rel="noopener">quadrics</a> in higher dimensions.
+</td>
+</tr>
+
+
+<tr>
+<td>
+<a href="685fa12/Lecture18.pdf" target="_blank" rel="noopener">Lecture 18</a>
+</td>
+<td>
+Oct 23,25
+</td>
+<td>
+Topic: The Classical Groups. Q: What is "geometry"? A: Klein's "Erlangen Program" (1872). If a group G acts transitively on a set X preserving some geometric structure then Orbit-Stabilizer says X=G/G_x, where G_x is the stabilizer of any point. This G/G_x is called a "homogeneous space". For us, X=(V,F,B) where (V,F) is a vector space and B is a bilinear form. Let O(V,B) be the subgroup of GL(V) preserving B. Some examples are GL,SL,O,SO,U,SU,Sp, and close relatives. The Frobenius-Hurwitz Theorem: The only normed division algebras are R,C,H,O. Good news: now you've seen it all. Big Theorem (Lie, Cartan-Killing, Weyl): Almost every Lie group looks like O(V,B) where F is in {R,C,H} and B is bilinear or hermitian. There are a few "exceptional" groups related to O. Huge Theorem (Dickson, Chevalley, etc.): Almost every finite simple group looks like a Lie group over a finite field. There are 26 "sporadic" exceptions.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture19.pdf" target="_blank" rel="noopener">Lecture 19</a>
+</td>
+<td>
+Oct 30, Nov 3
+</td>
+<td>
+Q: What is "space"? A: A "torsor" over a vector space. What?! The solutions of Ax=0 form a vector space. The solutions of Ax=b don't, because they don't have an identity element. However, we can still consider the vector space of "displacements." This can be done axiomatically. In general we should discuss semi-direct products of groups. If G acts freely and transitively (i.e. regularly) on a set S, then any choice of basepoint x in S allows us to identify S with G, where x corresponds to the identity element, BUT THIS CHOICE IS NON-CANONICAL. In this case we call S a "G-torsor" (I stole this term from a fancier kind of math.) Example: G acts regularly on itself by left translation. We refer to this G-torsor as AG ("affine G"). Important point: It has more automorphisms than G does, because we can also change the basepoint. In fact Aut(AG) is the semi-direct product of Aut(G) with the normal subgroup G of "translations." This is the geometric meaning of semi-direct products.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture20.pdf" target="_blank" rel="noopener">Lecture 20</a>
+</td>
+<td>
+Nov 8
+</td>
+<td>
+Recall that if G acts regularly (i.e. freely and transitively) on a set S then each choice of basepoint x in S defines a non-canonical identification G=S. We call S a G-torsor. Point of view: S is just G but we forgot which element is the identity. If S has some extra structure, then now G has some extra structure! Examples: The dihedral group D_2n acts regularly on the set of labeled n-gons. Hence we can identify D_2n with labeled n-gons. There are two important ways to generate D_2n. One shows the semi-direct product structure, one doesn't. One will be hugely important later. The symmetric group is generated by adjacent transpositions. The Cayley graph for these generators is the "permutohedron." (Remember the "game"?) This will also be hugely important later.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture21.pdf" target="_blank" rel="noopener">Lecture 21</a>
+</td>
+<td>
+Nov 13
+</td>
+<td>
+Back to our motivating example: affine space AV. Think of AV as a manifold of "points," with a tangent space V of "vectors" at each point. Given a quadratic form Q:V->F we consider isometries Isom(AV,Q) that preserve distance. By generalities, Isom(AV,Q) is the semidirect product of "translations" by V with the isometries Isom_0(AV,Q) that fix an arbitrary point (which we might as well call 0). Surprise (at least it surprises me):  preserving distance and fixing the point 0 forces the elements of Isom_0(AV,Q) to be LINEAR MAPS. Hence Isom_0(AV,Q)=O(V,Q). Conclusion: Isom(AV,Q) is the semi-direct product of O(V,Q) with V, where O(V,Q) acts on V in the completely obvious way. Elements of Isom(AV,Q) are not linear, but we can represent them as linear in a space of 1 higher dimension. (What's going on here?) Homework for Next Year: If Q:V->F is a degenerate form, split the radical V=V^\perp+W. What is the relationship between O(V,Q) and O(W,Q)? Answer: O(V,Q) is the semi-direct product of O(W,Q)XGL(V^\perp) with the ADDITIVE group of rectangular "translation" matrices Hom(V^\perp,W). Punchline: O(V,Q) contains no more geometric information than O(W,Q).
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture22.pdf" target="_blank" rel="noopener">Lecture 22</a>
+</td>
+<td>
+Nov 15
+</td>
+<td>
+Finally: What is a "reflection"? Answer: A "projection" is an idempotent P^2=P. A complete set of orthogonal idempotents (CSOI) satisfies (1) P_i^2=P_i for all i, (2) P_iP_j=P_jP_i=0 for all i,j, and (3) I=P_1+..+P_k. Fact: Direct sum decomposition equals existence of CSOI. Now consider bilinear B:VxV->F. Say projection P^2=P is "B-orthogonal" if it is self-adjoint, i.e. P^tB=BP. End of generality. Given any B-non-degenerate subspace W of V there exist orthogonal idempotents P_W and P_{W^\perp} projecting (B-orthogonally) onto W and W^\perp. Easy to define the associated "reflections" R_W=2P_W-I. In coordinates: Let A be a full-rank matrix with column space W. Then P_W=A(A^tBA)^{-1}A^tB. It's not silly because A is a rectangle. If A is square, obviously the thing collapses to P_V=I. Most important case: W is a (B-non-degenerate) hyperplane a^\perp for some column a. Then the reflection across a^\perp becomes R_a(x)=x-a(2B(a,x)/B(a,a)). Remember that.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture23.pdf" target="_blank" rel="noopener">Lecture 23</a>
+</td>
+<td>
+Nov 20
+</td>
+<td>
+BIG DAY. Let Q:V->F be non-degenerate with dim(V)=n and char(F)<>2. Then for all orthogonal maps A in O(V,Q) there exist anisotropic vectors u_1,..,u_k such that A=R_{u_1}R_{u_2}..R_{u_k}. This is the famous "Cartan-Dieudonn&eacute;" theorem, proved by Elie Cartan and reproduced in his book "The Theory of Spinors" (1966) and generalized to arbitrary fields by Jean Dieudonn&eacute; in "La g&eacute;om&eacute;trie des groupes classiques" (1948). The proof is not bad, but it uses a technical lemma that I won't prove. (The full proof is in <a href="685fa12/pete_clark.pdf" target="_blank" rel="noopener">Pete L. Clark's notes</a> if you want it.) Actually the technical lemma is not necessary for any of the cases we will use in this class. Scherk (1950) generalized Cartan-Dieudonn&eacute; to show that the minimal number of reflections needed to get A equals the codimension of the "fixed space" ker(A-I), except in a very special case that won't happen for us. Scherk's result was generalized further by <a href="685fa12/brady-watt.pdf" target="_blank" rel="noopener">Thomas Brady and Colum Watt</a> (2002). They studied the Cayley graph of O(V,Q) with respect to reflections. There are still open questions about this (especially over finite fields).
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture24.pdf" target="_blank" rel="noopener">Lecture 24</a>
+</td>
+<td>
+Nov 27
+</td>
+<td>
+Extension of Cartan-Dieudonn&eacute; to affine isometries. If B(a,a)<>0 then for any scalar k we can define the reflection R_{a,k} across the "affine" hyperplane H_{a,k}={x in V with B(a,x)=k}. The formula is R_{a,k}(x)=x-2a[(B(x,a)-k)/B(a,a)]. Note that k=0 gives the expected thing. Also note that translation is just two parallel reflections. This allows us to prove the following: If A is a (possibly non-linear) map V->V that preserves some nondegenerate form Q (and if char(F)<>2, blah blah blah), then there exist anisotropic vectors u_1,u_2,..,u_m with m<=dim(V)+1 and a scalar k such that A=R_{u_1,k}R_{u_2,0}..R_{u_m,0}. (Note: only the first reflection is possibly non-linear.) ISN'T THAT BEAUTIFUL? This shows that the study of reflections is at least as general as the study of Euclidean geometry itself. To get anything more, we must introduce topological considerations.
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="685fa12/Lecture25.pdf" target="_blank" rel="noopener">Lecture 25</a>
+</td>
+<td>
+Nov 29
+</td>
+<td>
+Last day of the semester :( FINALLY, we will think about FINITE groups. If G is a finite group of isometries, then for general reasons (averaging over the group) there exists a fixed point (call it the origin if you like), and hence G is a finite subgroup of O(V,Q). The classification of such G is essentially as hard as the classification of all finite groups, which gives us pause. So (finally) we bring back the topological fields F=R,C,H,.. DEFINITION: We say that G is a topological group if (1) G is a group, (2) G is a topological space, and (3) inversion and multiplication are continuous maps. (In short: A topological group is a "group object" in the category of topological spaces.)  DEFINITION: Say that a subgroup H<=G of a topological group G is "discrete" if the relative topology on H is discrete. I.e., each element of H is "isolated" in G. Example: (R^n,+) is a topological group, whose discrete subgroups are called "lattices". Nontrivial(!) Theorem: Every lattice in R^n has a Z-basis. (We are threatening to discuss number theory here, but we won't.) Thus we can prove that every discrete subgroup of the Euclidean group Isom(R^n) is the semi-direct product of a lattice (of "translations") and a finite subgroup of O(R^n). DEFINITION: Such groups are called "crystallographic". Naive Goal: Classify crystallographic groups. Case n=2: There are 17 "wallpaper groups" and 7 "frieze groups". (See M. Artin, pg 174.) Case n=3: (Fyodorov-Sch&ouml;flies, 1892) There are 230 crystallographic groups (UGH!). Hilbert's 18th Problem: Are there finitely many crystallographic groups in each dimension? Theorem (Bieberbach, 1910): Yes. However, the classification problem is too hard to be interesting. So what shall we do? To go further, we need a natural restriction. What shall it be? <i> To be continued..? </i>
+</td>
+</tr>
+
+<!--
+
+<tr>
+<td><a href="562sp12/562hw1.pdf" target="_blank" rel="noopener">Homework 1</a><br>
+<a href="562sp12/562hw1sol.pdf" target="_blank" rel="noopener">Solutions</a>
+</td>
+<td>
+Fri Feb 3
+</td>
+<td>
+<a href="562sp12/HW1notes.pdf" target="_blank" rel="noopener">Course Notes</a><br>
+The Ring Concept<br>
+The Ideal Concept<br>
+Isomorphism Theorems
+</td>
+</tr>
+
+-->
+
+<!-- <TR align="center"> <TH COLSPAN=3>Part 0. The Greeks</TH> </TR> -->
+
+
+<!-- no content below this -->
+
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div id="foot"><strong>Since 2009</strong>
+</div>
+<br><br>
+
+
+</body>
+
+</html>

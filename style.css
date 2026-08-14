@@ -1,0 +1,290 @@
+body {
+margin: 0 auto;
+background-color: #a5c09b;
+}
+
+body div {
+text-align: left;
+font-family: palatino,arial;
+}
+
+#main {
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+background-color: #1f1f1f;
+border-bottom: 10px solid #64835a;
+}
+
+#head {
+margin-top: auto;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+height: 70px;
+font-family: palatino,arial;
+background-color: #a5c09b;
+width: 100%;
+border-bottom: 10px solid #64835a;
+}
+
+#head a {
+text-decoration: none;
+}
+
+#head img { 
+float: right;
+height: 60px;
+border: none;
+margin-top: 0px;
+margin-right: 0px;
+padding-top: 10px;
+padding-left: 10px;	 
+padding-right: 10px;
+padding-bottom: 10px; 
+background-color: #64835a;
+}
+
+#head h1 {
+text-shadow: 0.1em 0.1em 0.1em #64835a;
+padding-top: 20px;
+margin-bottom: 0px;
+padding-left: 80px;
+padding-bottom: 0px;
+font-size: 55px;
+font-variant: small-caps;
+color: #1f1f1f;
+}
+
+#menu {
+float: left;
+clear: left;
+width: 18%;
+padding-top: 20px;
+padding-bottom: 10px;
+margin-bottom: 10px;
+margin-left: 2%;}
+
+#menu h1 {
+height: 20px;
+margin: 0px;
+border-bottom: 2px solid #64835a;
+}
+
+#menu h2 {
+height: 20px;
+margin: 0px;
+}
+
+#menu a.g {
+color: #7b9a70;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+text-decoration: none;
+font-family: palatino,arial;
+font-weight: bold;
+font-size: 25px;
+display: block;
+background-color: #1f1f1f;
+}
+
+#menu a.o {
+color: #e99c43;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+text-decoration: none;
+font-family: palatino,arial;
+font-weight: bold;
+font-size: 25px;
+display: block;
+background-color: #1f1f1f;
+}
+
+#menu a:hover {
+background-color: #373737;
+}
+
+#content {
+min-height: 650px;
+font-family: arial;
+font-size: auto;
+font-family: palatino,arial;
+padding-top: 30px;
+padding-bottom: 20px;
+margin-left: 22%;
+margin-right: 100px;
+width: auto;
+color: #a5c09b;
+}
+
+#content h1 {
+color: #e99c43;
+font-size: 30px;
+}
+
+#content h2 {
+font-size: 18px;
+font-weight: normal;
+margin-top: 60px;
+margin-bottom: 0px;
+text-align: left;
+}
+
+#content h3 {
+color: #7b9a70;
+text-decoration: none;
+font-family: palatino,arial;
+font-weight: bold;
+font-size: 25px;
+margin-top: 0px;
+martin-bottom: 0px;
+}
+
+#content a {
+text-decoration: none;
+font-family: arial;
+color: #e5efe1;
+}
+
+#content a:hover {
+text-decoration: underline;
+}
+
+#content img.front {
+border: 0;
+width: 92%;
+margin: 0 auto;
+}
+
+#content img.moira {
+border: 0;
+width: 80%;
+margin: 0 auto;
+}
+
+#content img.me { 
+float: left;
+width: 50%;
+border: 0px solid #373737;
+margin-top: 30px;
+margin-right: 20px;
+}
+
+#content .list-main li {
+list-style-position: outside;
+margin-bottom: 5px;
+padding: 5px;
+}
+
+#content .list-table li {
+list-style-position: outside;
+margin-left:-25px;
+padding:0px;
+}
+
+#content table,th,td {
+border: outset 5px; 
+border-collapse: auto;
+border-spacing: 10px;
+padding: 10px;
+border-color: #a5c09b;
+}
+
+#content a.o {
+color: #e99c43;
+text-decoration: none;
+font-family: palatino,arial;
+font-weight: bold;
+font-size: 25px;
+}
+
+#content a.g {
+color: #7b9a70;
+text-decoration: none;
+font-family: palatino,arial;
+font-weight: bold;
+font-size: 25px;
+}
+
+#foot {
+text-align: center;
+font-variant: small-caps;
+padding-top: 5px;
+color: #64835a;
+font-size: 12px;
+}
+
+/* Responsive additions for the static site. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  #main {
+    width: 100%;
+  }
+
+  #head {
+    height: auto;
+  }
+
+  #head h1 {
+    margin: 0;
+    padding: 1rem;
+    font-size: clamp(2rem, 11vw, 3.4rem);
+  }
+
+  #menu {
+    float: none;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    width: auto;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #menu h1,
+  #menu h2 {
+    display: none;
+  }
+
+  #menu a.g,
+  #menu a.o {
+    padding: 0.35rem 0;
+    font-size: 1.1rem;
+  }
+
+  #content {
+    min-height: 0;
+    width: auto;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #content img.front,
+  #content img.me,
+  #content img.moira {
+    float: none;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  #content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+site-menu { display: contents; }
+.menu-separator { display: block; height: 22px; border-top: 2px solid #64835a; margin-top: 20px; }
+@media (max-width: 800px) { .menu-separator { display: none; } }
