@@ -4,8 +4,8 @@ const menuItems = [
   { href: "me.html", label: "About Me", color: "g" },
   { href: "activity.html", label: "Activity", color: "o" },
   { href: "oldcourses.html", label: "Old Courses", color: "g" },
-  { href: "ADE_bochum.html", label: "ADE course", color: "o", separated: true },
-  { href: "ADE_bochum.html", label: "Hello", color: "g" }
+  { href: "310fa26.html", label: "MTH 310", color: "o", separated: true },
+  { href: "510fa26.html", label: "MTH 510", color: "g" }
 ];
 
 class SiteMenu extends HTMLElement {
