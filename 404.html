@@ -8,30 +8,10 @@
 <link rel="stylesheet" href="/UM_style.css">
 <script src="/menu.js" defer></script>
 <style>
-  .not-found-box {
-    max-width: 720px;
-    margin-top: 2rem;
-    padding: 2rem;
-    border: outset 5px #a5c09b;
-  }
-
-  .not-found-box h1 {
-    margin-top: 0;
-    font-size: clamp(2rem, 5vw, 3.5rem) !important;
-  }
-
-  .not-found-box p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-
-  .not-found-box .home-link {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #e99c43 !important;
-    font-family: palatino, arial !important;
-    font-size: 1.35rem;
-    font-weight: bold;
+  .not-found-image {
+    display: block;
+    width: 50%;
+    margin-top: 30px;
   }
 </style>
 <script>
@@ -50,11 +30,8 @@
   <div id="head"><a href="/index.html"><h1>Drew Armstrong</h1></a></div>
   <site-menu></site-menu>
   <div id="content">
-    <div class="not-found-box">
-      <h1>File not found.</h1>
-      <p>The requested file could not be found.</p>
-      <p><a class="home-link" href="/index.html">Return to the homepage &rarr;</a></p>
-    </div>
+    <h1>File not found.</h1>
+    <img class="not-found-image" src="/confused-travolta.gif" alt="John Travolta looking confused">
   </div>
 </div>
 </body>
