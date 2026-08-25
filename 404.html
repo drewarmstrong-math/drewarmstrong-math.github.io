@@ -5,6 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found — Drew Armstrong</title>
 <link rel="stylesheet" href="UM_style.css">
+<script src="menu.js" defer></script>
+<style>
+  .not-found-box {
+    max-width: 720px;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: outset 5px #a5c09b;
+  }
+
+  .not-found-box h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 5vw, 3.5rem) !important;
+  }
+
+  .not-found-box p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .not-found-box .home-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #e99c43 !important;
+    font-family: palatino, arial !important;
+    font-size: 1.35rem;
+    font-weight: bold;
+  }
+</style>
 <script>
   const legacyPath = window.location.pathname;
   if (/\.php$/i.test(legacyPath)) {
@@ -17,13 +45,16 @@
 </script>
 </head>
 <body>
-<main id="main">
+<div id="main">
   <div id="head"><a href="index.html"><h1>Drew Armstrong</h1></a></div>
+  <site-menu></site-menu>
   <div id="content">
-    <h1>Page not found</h1>
-    <p>The requested page could not be found.</p>
-    <p><a href="index.html">Return to the homepage</a></p>
+    <div class="not-found-box">
+      <h1>Lost in hyperspace?</h1>
+      <p>The page you were looking for could not be found. It may have moved, changed its name, or wandered off into another dimension.</p>
+      <p><a class="home-link" href="index.html">Return to the homepage &rarr;</a></p>
+    </div>
   </div>
-</main>
+</div>
 </body>
 </html>
