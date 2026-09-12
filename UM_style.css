@@ -22,11 +22,12 @@ margin-top: auto;
 margin-left: auto;
 margin-right: auto;
 text-align: left;
-height: auto;
+height: 70px;
 font-family: palatino,arial;
 background-color: #a5c09b;
 width: 100%;
 border-bottom: 10px solid #64835a;
+overflow: hidden;
 }
 
 #head a {
@@ -48,9 +49,10 @@ background-color: #64835a;
 
 #head h1 {
 text-shadow: 0.1em 0.1em 0.1em #64835a;
-margin: 0;
-padding: 20px 0 10px 80px;
-line-height: 1;
+padding-top: 20px;
+margin-bottom: 0px;
+padding-left: 80px;
+padding-bottom: 0px;
 font-size: 55px;
 font-variant: small-caps;
 color: #1f1f1f;
