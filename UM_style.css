@@ -27,7 +27,6 @@ font-family: palatino,arial;
 background-color: #a5c09b;
 width: 100%;
 border-bottom: 10px solid #64835a;
-overflow: hidden;
 }
 
 #head a {
@@ -48,7 +47,7 @@ background-color: #64835a;
 }
 
 #head h1 {
-text-shadow: 0.1em 0.1em 0.1em #64835a;
+text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.45);
 padding-top: 20px;
 margin-bottom: 0px;
 padding-left: 80px;
