@@ -22,7 +22,7 @@ margin-top: auto;
 margin-left: auto;
 margin-right: auto;
 text-align: left;
-height: 70px;
+height: auto;
 font-family: palatino,arial;
 background-color: #a5c09b;
 width: 100%;
@@ -48,10 +48,9 @@ background-color: #64835a;
 
 #head h1 {
 text-shadow: 0.1em 0.1em 0.1em #64835a;
-padding-top: 20px;
-margin-bottom: 0px;
-padding-left: 80px;
-padding-bottom: 0px;
+margin: 0;
+padding: 20px 0 10px 80px;
+line-height: 1;
 font-size: 55px;
 font-variant: small-caps;
 color: #1f1f1f;
