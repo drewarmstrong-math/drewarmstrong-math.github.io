@@ -46,7 +46,12 @@
 <h1></h1>
 <script>
 <!--
-document.write('<a href="index.html"><img class="front" src="front/front' + rand(26) + '.jpg"></a>');
+var n = Math.random() < 1/3 ? 2 : (function() {
+    var k = Math.floor(Math.random() * 25) + 1;
+    return k >= 2 ? k + 1 : k;
+})();
+
+document.write('<a href="index.html"><img class="front" src="front/front' + n + '.jpg"></a>');
 //-->
 </script>
 
